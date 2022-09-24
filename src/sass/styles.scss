@@ -1,0 +1,162 @@
+:root {
+    --bs-primary: rgb(71, 114, 179);
+    --bs-primary-rgb: 71, 114, 179;
+    
+    --bs-secondary: rgb(84, 84, 84);
+    --bs-secondary-rgb: 84, 84, 84;
+
+    
+    --bs-light: rgb(229, 229, 229);
+    --bs-light-rgb: 229, 229, 229;
+    
+    --bs-dark: rgb(29, 29, 29);
+    --bs-dark-rgb: 29, 29, 29;
+
+    --bs-gray :#3D3D3D;
+    --bs-gray-dark: #303030;
+    
+    --bs-body-bg: rgb(56, 56, 56);
+    --bs-body-bg-rgb: 56, 56, 56;
+    
+    --bs-body-color: var(--bs-light);
+    --bs-body-color-rgb: var(--bs-light-rgb);
+}
+
+body {
+    --center: 45em;
+    --gridLineColor: #4B4B4B;
+    --gridXColor: #913B48;
+    --gridYColor: #536731;
+    background-image: 
+      linear-gradient( 45deg, transparent var(--center), var(--gridXColor) var(--center), var(--gridXColor) calc(var(--center) + 0.15em), transparent calc(var(--center) + 0.15em)),
+      linear-gradient(-45deg, transparent var(--center), var(--gridYColor) var(--center), var(--gridYColor) calc(var(--center) + 0.15em), transparent calc(var(--center) + 0.15em)),
+      repeating-linear-gradient( 45deg, var(--gridLineColor), var(--gridLineColor) 0.1em, transparent 0.1em, transparent 5em),
+      repeating-linear-gradient(-45deg, var(--gridLineColor), var(--gridLineColor) 0.1em, transparent 0.1em, transparent 5em);
+
+    background-attachment: fixed;
+}
+
+$maxWidth: 900px;
+
+$marginX: 4vw;
+$marginY: 2%;
+main {
+    max-width: $maxWidth;
+    padding-top: $marginY;
+    padding-bottom: $marginY;
+    padding-right: $marginX;
+    padding-left: $marginX;
+    padding-top: 0;
+    text-align: justify;
+    font-size: larger;
+}
+
+.navbar-dark {
+    --bs-navbar-color: rgba(var(--bs-light-rgb), 0.55);
+    --bs-navbar-hover-color: rgba(var(--bs-light-rgb), 0.75);
+    --bs-navbar-disabled-color: rgba(var(--bs-light-rgb), 0.25);
+    --bs-navbar-active-color: var(--bs-light);
+    --bs-navbar-brand-color: var(--bs-light);
+    --bs-navbar-brand-hover-color: var(--bs-light);
+    --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
+
+    background-color: var(--bs-dark) !important;
+}
+
+h1, h2 {
+    padding-top: 20px;
+    scroll-margin-top: 70px;
+}
+
+$marginX: 5px;
+$marginY:1.5px;
+code {
+    --bs-code-color: var(--bs-light);
+    border-radius: 5px;
+    border-color: var(--bs-light);
+    padding-top: $marginY;
+    padding-bottom: $marginY;
+    padding-left: $marginX;
+    padding-right: $marginX;
+    background-color: var(--bs-dark);
+}
+
+$marginX: 2%;
+$marginY: 1%;
+blockquote {
+    background-color: var(--bs-gray-dark);
+    padding-top: $marginY;
+    padding-bottom: $marginY;
+    padding-right: $marginX;
+    padding-left: $marginX;
+    border-style: solid;
+    border-width: 0;
+    border-left-width: thick;
+    font-size: large;
+    color: var(--bs-light);
+}
+
+footer {
+    max-width: $maxWidth;
+    text-align: center;
+}
+
+.alert-primary {
+    --bs-alert-color: var(--bs-light);
+    --bs-alert-bg: var(--bs-gray-dark);
+    --bs-alert-border-color: var(--bs-primary);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--bs-gray-dark);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--bs-secondary);
+}
+
+.nPanelButton {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    height: 45%;
+    color: var(--bs-light);
+    text-decoration: none;
+    background: var(--bs-gray-dark);
+    border-color: var(--bs-light);
+    border-width: 0;
+}
+
+.nPanelButton:hover {
+    color: var(--bs-light);
+    text-decoration: none;
+}
+
+.offcanvas {
+    --bs-offcanvas-width: 260px;
+}
+
+.nPanelItem {
+    margin: 0.5%;
+    background-color: var(--bs-gray);
+
+    a {
+        color: var(--bs-light);
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: var(--bs-light);
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width : 1025px) {
+    body {
+        --center: 25em;
+    }
+}

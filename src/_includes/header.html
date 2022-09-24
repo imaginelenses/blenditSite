@@ -1,0 +1,33 @@
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark p-2">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="../assets/blendit.png" alt="Blendit Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav m-0 ms-auto">
+        {% for navPage in collections.all | sort(attribute="data.order") %}
+          <li class="nav-item ms-auto">
+            <a
+              {% if page.url == navPage.url %}
+                class="nav-link active" aria-current="page" 
+                href="#">
+              {% else %}
+                class="nav-link" 
+                href="{{ navPage.url }}">
+              {% endif %} 
+                {{ navPage.data.title }}
+            </a>
+          </li>
+        {% endfor %}
+        <li class="nav-item ms-auto ">
+          <a class="nav-link my-auto mx-auto" href="https://github.com/imaginelenses/blendit">
+            <img style="height: 24px;" src="{{ '../assets/GitHub-64px.png' | url }}" alt="Github Repository">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,21 @@
+{
+  "name": "blenditsite",
+  "version": "1.0.0",
+  "description": "A website for Blendit.",
+  "scripts": {
+    "watch:sass": "sass --watch src/sass:public/css",
+    "watch:eleventy": "eleventy --serve",
+    "build:sass": "sass src/sass:public/css",
+    "build:eleventy": "eleventy",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:*"
+  },
+  "keywords": [],
+  "author": "imaginelenses <imaginelenses@gmail.com> (https://www.imaginelenses.com/)",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.54.9"
+  }
+}
