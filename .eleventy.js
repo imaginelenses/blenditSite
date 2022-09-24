@@ -9,6 +9,9 @@ module.exports  = (config) => {
     config.addShortcode('year', () => `${new Date().getFullYear()}`)
 
     config.addPassthroughCopy('./src/assets')
+    
+    config.addPassthroughCopy('./src/CNAME')
+
     config.addPassthroughCopy('./src/js')
     config.addWatchTarget('./src/js')
 
