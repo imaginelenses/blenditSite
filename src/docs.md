@@ -13,7 +13,7 @@ nPanel:
 
 <h1 id="getting-started">Getting Started</h1>
 
-1. Download Blendit `.zip` file from <a aria-label="Blendit download link." href="https://github.com/imaginelenses/blendit/archive/refs/tags/v0.1.0-alpha.zip">here</a>.
+1. Download Blendit `.zip` file from <a role="button" aria-label="Blendit download link." href="{{ downloadLink }}">here</a>.
 
 2. Install Blendit [Application Template](https://docs.blender.org/manual/en/latest/advanced/app_templates.html#app-templates).
         
@@ -59,7 +59,7 @@ nPanel:
     **Note**: The *username* and *email* details shown are of the previous *commiter* - if that isn't you do change it. 
 
 
-<h id="commits">Commits</h2>
+<h2 id="commits">Commits</h2>
 
 - Commits are process of saving snapshots of your project.
 - Create a new Commit from the *Blendit* panel in the *Properties* area, under *Active Tools and Workspace settings* tab.
