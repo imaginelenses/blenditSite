@@ -102,12 +102,13 @@ footer {
   position: absolute;
   top: 60px;
   right: 0;
-  height: 45%;
+  height: 27px;
   color: var(--bs-light);
   text-decoration: none;
   background: var(--bs-gray-dark);
   border-color: var(--bs-light);
   border-width: 0;
+  z-index: -1;
 }
 
 .nPanelButton:hover {
