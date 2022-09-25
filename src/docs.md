@@ -56,7 +56,7 @@ nPanel:
     
     <img class="img-fluid mb-3 rounded shadow-lg" src="../assets/openProject.png" alt="Blender Menu" loading="lazy">
 
-    **Note**: The *username* and *email* details shown are of the previous *commiter* - if that isn't you do change it. 
+    **Note**: The *username* and *email* details shown are of the previous *committer* - if that isn't you do change it. 
 
 
 <h2 id="commits">Commits</h2>

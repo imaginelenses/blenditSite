@@ -21,7 +21,7 @@ Blendit brings ***Version Control*** to Blender.
 
 Version Control helps you track different versions of your project. Working on a project overtime you may want to keep track of which changes were made, by whom, and when those changes were made.
 
-Version control has been standard practice in software development to keep track of changes mode to source code for years now. However, when it comes to working with files other than textual files you usually out of luck.
+Version control has been standard practice in software development to keep track of changes made to source code for years now. However, when it comes to working with files other than textual files you usually out of luck.
 
 While Git and other Version Control Systems (VCS) can track `.blend` (binary) files it does not make much sense as they are designed for textual files.
 
