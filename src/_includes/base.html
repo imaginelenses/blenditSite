@@ -9,8 +9,6 @@
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="icon" href="/assets/favicon.ico">
 
-  <meta name="description" content="The official website of Blendit (Blender + Git) - A Git integration for Blender.">
-
   <meta
     http-equiv="Content-Security-Policy"
     content="
@@ -23,9 +21,22 @@
     " 
   />
   <meta name="generator" content="Eleventy">
-
-  {% set siteURL = ["http://blendit.imaginelenses.com", page.url] | join %}
+  
+  {% set siteURL = ["https://blendit.imaginelenses.com", page.url] | join %}
+  {% set description = "The official website of Blendit (Blender + Git) - A Git integration for Blender." %}
+  
+  <meta name="description" content="{{ description }}">
+  
+  <meta property="og:url" content="{{ siteURL }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Blendit">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
   <meta property="og:image" content="https://v1.screenshot.11ty.dev/{{ siteURL | urlencode }}/opengraph/">
+  
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:site" content="@imaginelenses">
+  <meta property="twitter:creator" content="@imaginelenses">
 
   <title>
       {{ title }} - Blendit
