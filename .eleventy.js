@@ -1,6 +1,6 @@
 module.exports  = (config) => {
 
-    config.addGlobalData("downloadLink", "https://github.com/imaginelenses/blendit/archive/refs/tags/v0-1-0-alpha.zip");
+    config.addGlobalData("downloadLink", "https://github.com/imaginelenses/blendit/releases/download/v0-1-1-alpha/blendit.zip");
 
     config.setBrowserSyncConfig({
         files: './public/css'
